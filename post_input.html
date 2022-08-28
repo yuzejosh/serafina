@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<!--Catalyst Hackathon Aug2022-->
+<!--Team Serafina: Josh, Saif, Fatima, Jerrilyn-->
+
+<head>
+    <title>Clairvoyance</title>
+</head>
+  
+<!--The title and subtitle stay constant--->
+<body spellcheck="false" 
+      style="font-family: Helvetica;
+             color: rgb(255, 255, 255);
+             background-color: rgb(65, 177, 185);
+             text-align:center;
+             font-size: 17pt">
+    <h1 style="font-family: 'Copperplate';
+               font-size: 69pt;">Clairvoyance</h1>
+    <p>Misinformation and Fake News have become increasingly prevalent over the years. Let&apos;s fix that!</p>
+    <p><br></p>
+
+<!--Show the results!---------------------->
+    <p style="margin:auto;
+              font-size:58pt;"><i>{{ title }}</i></p>
+    <p style="font-size: 2pt"><br></p>
+    <p style="margin:auto;
+              font-size:30pt;
+              font-family: 'Copperplate'">Reliability</p>
+  	<p style="margin:auto;
+              font-size:69pt;
+              font-family: 'Copperplate'">{{ score }}</p>
+	<p style="margin: auto;
+              width: 69%;
+              padding: 15px;
+              border-radius:15px;
+              color: rgb(100,110,130);
+              background-color: rgb(255,200,200)">{{ description }}</p>
+
+	<p style="font-size: 4pt;"><br></p>
+
+<!--Two input fields----------------------->
+    <form method="POST" 
+          style="font-family: 'Helvetica';
+                 text-align: center;">
+        <!--Text field for inputting link-->
+        <input type="text" 
+             style="border-radius:17px;
+                    font-size: 15pt;
+                    height: 51px; width:400px;
+                    border:none" 
+             placeholder="   Try another link!" required="">
+        <p style="font-size: 4pt;"><br></p>
+        <!--Submit button to proceed------->
+        <input type="button" 
+             value="Check!" 
+             style="border-radius:15px;
+                    font-size: 15pt;
+                    height: 47px; width:99px;
+                    color: rgb(90,90,90);">
+
+    </form>
+</body>
+
+</html>
